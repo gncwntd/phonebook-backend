@@ -37,9 +37,9 @@ person.save().then((result) => {
   mongoose.connection.close();}
 });
 
-// Person.find({}).then((result) => {
-//   result.forEach((person) => {
-//     console.log(person);
-//   });
-//   mongoose.connection.close();
-// });
+Person.find({}).then((result) => {
+  result.forEach((person) => {
+    console.log(person);
+  });
+  mongoose.connection.close();
+});
